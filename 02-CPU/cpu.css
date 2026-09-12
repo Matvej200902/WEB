@@ -8,7 +8,7 @@ body {
 	/*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
 	font-family: Roboto Condensed;
 	/*background: #c3ff6c*/
-	background-image: linear-gradient(165deg,#0f172a, #4338ca);
+	background-image: linear-gradient(165deg,#ffc800, #d60303);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -101,4 +101,8 @@ a:active
 {
 	background-color: black;
 	color: white;
+}
+a{
+	text-decoratrion: none;
+	color: inherit;
 }
