@@ -1,0 +1,216 @@
+﻿body
+{
+	background-image:url("img/bliss.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+.main-window
+{
+	/*border: solid 1px;*/
+	width: 400px;
+	height: 350px;
+}
+.title-bar {
+	height: 36px;
+	/*background-color: #4629ff;*/
+	color: white;
+	font-family: Tahoma;
+	display: flex;
+	justify-content: space-between; /*Выравнивание по горизонтали*/
+	align-items: center; /*Выравнивание по вертикали*/
+	padding: 0px 0px 0px 8px;
+
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	/*background-image: linear-gradient(to bottom, #7089ff, #002fe8, #080798);*/
+	background-image: linear-gradient(to bottom, rgb(94, 137, 255), rgb(0, 95, 246), rgb(38, 0, 151));
+	box-shadow: inset -1px 0px 8px 0px darkblue;
+}
+.icon-and-title {
+	display: flex;
+	align-items: center;
+}
+.title-bar-window-control-buttons
+{
+	padding: 0 3px;
+	width: 120px;
+	padding: 1px;
+}
+.title-bar-window-control-buttons/*, .control-buttons */
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*
+	border-bottom: solid 1px;*/
+}
+.control-button
+{
+	width: 28px;
+	height: 28px;
+	font-size: 24px;
+	margin: 0 2px;
+
+	border: solid 1px;
+	border-radius: 10px;
+
+	background-color: #2d65ff;
+	color: white;
+
+	box-shadow: inset 2px 1px 7px 0px #5e91e2,
+				inset -2px -1px 7px 0px #171b6f;
+}
+	.control-button:hover {
+		background-image: linear-gradient(to bottom right, rgb(189, 189, 249), #002ba1, #6463e9);
+	}
+.control-button[disabled], .control-button[disabled]:hover
+{
+	color: #7d7c7c;
+	background-image: none;
+	background-color: rgb(39, 104, 249);
+	box-shadow: inset 3px 1px 7px 0 #636886;
+}
+	.control-button:active {
+		background-image: none;
+		background-color: rgb(50, 50, 200);
+		box-shadow: inset -3px -1px 7px 0 #636886, inset 4px 1px 5px 0px #000088;
+	}
+.control-button-signature
+{
+	margin-left: -5px;
+	margin-top: -7px;
+}
+.close-button-signature
+{
+	margin: -5px 0 0 -2px;
+}
+.close-button 
+{
+	background-color: #e13535;
+	box-shadow: inset 2px 1px 7px 0 #ee6f6f, inset -2px -1px 7px 0 #510707;
+}
+.close-button:hover
+{
+	background-image: linear-gradient(to bottom right, rgb(220, 177, 157), rgb(255, 77, 57), rgb(220, 177, 157));
+}
+.close-button:active
+{
+	background-image: none;
+	background-color: rgb(220, 77, 57);
+	box-shadow: /*inset -2px -1px 8px 0 #FF8888,*/ inset 2px 1px 8px 0 #770000;
+}
+.iconsm {
+	width: 32px;
+	height: 32px;
+}
+/*------------------------------------- Client area -------------------------------------*/
+.client-frame
+{
+	height: 311px;
+	background-color: #002ba1;
+	display: flex;
+	justify-content: center;
+
+	box-shadow: inset 0 0px 1px 0 #6463e9;
+}
+.client-rect
+{
+	background-color: #4166f7;
+	width: 390px;
+	height: 306px;
+	box-shadow: 0 2px 4px 0 #090a4f;
+}
+.menu-bar {
+	border-bottom: solid 2px darkblue;
+	background-color: #2128b5;
+}
+	.menu-bar > button {
+		border: none;
+		background-color: #1c29b9;
+	}
+.menu-bar > button:hover
+{
+	background-color: #d7d9c4; 
+	box-shadow: 1px 1px 0 0 gray;
+}
+.menu-bar > button:active
+{
+	background-color: darkgray;
+	box-shadow: -1px -1px 0 0 gray;
+}
+/*---------------------------------------- Display ----------------------------------------*/
+.display-container 
+{
+	padding: 6px;
+}
+	.display-container > input {
+		width: 98%;
+		border-radius: 12px;
+		box-shadow: inset 0 0 6px 0 gray;
+		font-size: 16px;
+		text-align: right;
+	}
+/*---------------------------------------- Buttons ----------------------------------------*/
+.buttons-container
+{
+	padding: 6px;
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat(6, auto);
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+}
+.square
+{
+	width: 32px;
+	height: 32px;
+	border: inset 2px;
+	margin: auto auto;
+}
+.clear-buttons
+{
+	grid-row: 1;
+	grid-column-start: 2;
+	grid-column-end: 7;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	.clear-buttons > button
+	{
+		width: 32%;
+		height: 100%;
+	}
+.buttons-container button 
+{
+	/*color: blue;*/
+	height: 42px;
+	/*border-radius: 22px;
+	border: solid 1px darkblue;
+	box-shadow: inset 0 0 6px 0 gray;*/
+}
+.buttons-container > button {
+	width: 58px;
+}
+.buttons-container button
+{
+	height: 44px;
+	color: mediumblue;
+	font-size: 16px;
+	border-radius: 22px;
+	border: solid 1px darkblue;
+	box-shadow: inset 0 0 6px 0 gray;
+}
+.buttons-container button:hover 
+{
+	background-color: white;
+}
+.buttons-container button:active, .buttons-container .button-active {
+	background-color: #a8a8a8;
+	box-shadow: inset 0px -2px 15px -5px gray;
+}
+.buttons-container .memory-button, .buttons-container .operation-button, .clear-buttons > button {
+	color: red;
+}
